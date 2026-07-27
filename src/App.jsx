@@ -44,20 +44,15 @@ export default function App() {
       <div className="donezo-main">
         {/* Top Header Bar */}
         <div className="donezo-top-bar">
-          {/* Search Bar Wrapper */}
           <div className="search-input-wrapper">
             <span>🔍</span>
             <input type="text" placeholder="Search traveler telemetry..." />
             <span style={{ fontSize: '0.7rem', color: '#9CA3AF', background: '#F3F4F6', padding: '0.15rem 0.45rem', borderRadius: '4px' }}>⌘F</span>
           </div>
 
-          {/* Top Right Profile & Action Buttons */}
           <div className="top-bar-right">
             <button className="btn-donezo-green" onClick={() => loadData(true)} disabled={isRefreshing}>
               {isRefreshing ? 'Syncing...' : '+ Sync Telemetry'}
-            </button>
-            <button className="btn-donezo-outline" onClick={() => loadData(true)}>
-              Export Data
             </button>
 
             <div className="user-profile-chip">
